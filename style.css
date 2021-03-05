@@ -1,0 +1,482 @@
+:root {
+    --backLight: "white";
+    --backDark: #F0F3F4;
+    --borderDark: #839192;
+    --borderLight: #BFC9CA;
+    --light: "white";
+    --hoverNav: #A7D3D7;
+    --textDark: #424545;
+}
+
+/* Imported text  */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+/* General body style  */
+body {
+    display: block;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    color: var(--borderDark);
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    color: var(--textDark);
+}
+
+/* Header  */
+header {
+    background-color: var(--backLight);
+    display: grid;
+    grid-template-columns: 1fr 0.5fr minmax(150px, 3.5fr) 1fr 1fr 1fr 30px 30px 30px 30px;
+    align-items: center;
+}
+
+header > img {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#cat {
+    margin-left: 0px;
+    padding-left: 10px;
+}
+
+header p {
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+form {
+    margin: 10px;
+}
+
+#search {
+    border-radius: 1.2em;
+    border: 1.7px solid var(--borderDark);
+    height: 35px;
+    width: 100%;
+    text-align: center; 
+    background-color: var(--backDark);
+}
+
+#search:focus {
+    outline: none;
+}
+
+.icon {
+    position: absolute; 
+    padding: 12px; 
+    min-width: 40px;
+    cursor: pointer;
+}
+
+#heart_icon, #bell_icon, #cart_icon {
+    padding-left: 10px; 
+    padding-top: 50px;
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#identity > p {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: brown;
+    color: white;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+/* Navigation Bar  */
+nav {
+    background-color: var(--backDark);
+    border-top: 1px solid var(--borderLight);
+    -webkit-box-shadow: 0 10px 6px -10px #777;
+    -moz-box-shadow: 0 10px 6px -10px #777;
+    box-shadow: 0 10px 6px -10px #777;
+}
+
+nav > ul > li > div {
+    display: none;
+    position: absolute;
+}
+
+nav > ul {
+    list-style: none;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav > ul > li > a:hover + div {
+    display: block;
+}
+
+nav > ul > li > div:hover {
+    display: block;
+}
+
+nav > ul > li > div > ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    text-align: left;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+nav > ul > li > div > ul > li {
+    text-align: left;
+    padding: 5px;
+}
+
+
+nav > ul > li > div > ul > li:hover {
+    background-color: var(--backDark);
+}
+
+/* Main section  */
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* Call to action  */
+#callAction {
+    margin-bottom: 50px;
+}
+
+#callAction > img {
+    width: 100%;
+}
+
+/* First main section  */
+#learnNext {
+    margin-bottom: 50px;
+}
+
+#learnHead {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#learnHead > h1 {
+    font-size: 34px;
+}
+
+#learnHead > a {
+    text-decoration: none;
+    color: #61C4CD;
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 16px;
+
+}
+
+#learnContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+}
+
+section > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section > article > #cardContent {
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+    border: 0.5px solid var(--borderLight);
+    border-radius: 3px;
+}
+
+/* Second main section  */
+#learnContent2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 7px;
+}
+
+#learnHead2 {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+}
+
+#learnHead2 > h1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#learnHead2 > h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#learnHead2 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#learnHead2 > div:nth-child(2) > a {
+    text-decoration: none;
+    color: #61C4CD;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+#learnHead2 > div:nth-child(3) >p:nth-child(1) {
+    color: var(--textDark);
+    padding: 2px 7px 2px 7px;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 14px;
+    background-color: lightgreen;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card2 {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#cardContent2 > h3, p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#starDiv {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+
+#star {
+    margin: 0px 7px 0px 7px;
+}
+
+#star > i {
+    color: rgb(223, 223, 73);
+    margin-top: 5px;
+}
+
+#price {
+    font-size: 16px;
+    color: var(--textDark);
+    font-weight: bolder;
+}
+
+#sales {
+    font-size: 14px;
+    color: var(--textDark);
+    font-weight: bolder;
+    background-color: khaki;
+    border-radius: 3px;
+    width: 6em;
+    text-align: center;
+    padding: 3px;
+}
+
+/* Modal implimentation  */
+#learnContent2 > div > a {
+    z-index: 1;
+    cursor: pointer;
+}
+
+#hoverC {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#learnContent2 > div > a + section {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    margin-left: 480px;
+    margin-bottom: -100px;
+    /* top: 130%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border: 0.5px solid var(--borderLight);
+    border-radius: 3px;
+}
+
+#learnContent2 > div > a:hover + section {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin-bottom: -100px;
+}
+
+#learnContent2 > div > a + section:hover {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin-bottom: -100px;
+}
+
+#cardSales {
+    color: rgb(114, 199, 118);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    text-align: center;
+}
+
+#cardSales > p:nth-child(2){
+    margin: 10px;
+}
+
+#addCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#addCart {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#addCart > p {
+    width: 250px;
+    height: 40px;
+    background-color: lightcoral;
+    color: red;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#addCart > i {
+    font-size: 36px;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* Give space at bottom  */
+#end {
+    margin-top: 200px;
+}
+
+/* Table formatting  */
+#tableAtrticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.table-show {
+    font-size: 16px;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.table-hide {
+    empty-cells: hide;
+}
+
+.zebra {
+
+}
+
+.table-show, th, td {
+    border: 1px solid var(--borderDark);
+  }
+
+td {
+    background: var(--backDark);
+    border: 1px solid #999;
+    padding: 10px 15px;
+    color: green;
+    cursor: pointer;
+  }
+
+.zebra > tbody > tr > td:nth-child(odd) {
+      background-color: white;
+  }
+
+.zebra > tbody > tr > td:nth-child(even) {
+    background-color: rgb(165, 47, 47);
+}
+  
+/* Responsive table  */
+@media screen and (max-width: 900px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    .table-show {
+        overflow-x: auto;
+    }
+    
+    .table-hide tr, .zebra tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .table-hide td, .zebra td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+        
+    .table-hide td:last-child, .zebra td:last-child {
+      border-bottom: 0;
+    }
+  }
