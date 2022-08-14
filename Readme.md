@@ -1,4 +1,4 @@
-# Stutern CSS
+# Demo CSS
 
 Implementation of advance CSS techniques.
 
